@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Convertor de temperaturas 2.0</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Conversor de Temperatura 2.0</h1>
+            <div class="dados">
+                <label for="escalaAtual">Converter: </label>
+                <input type="number" id="temperatura">
+                <select name="escala" id="escala1">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <label for="escalaSecundária">Para: </label>
+                <select name="escala" id="escala2">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit" selected>Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Converter" id="botao" onclick="converter()">
+            </div>
+            <div class="convertido">
+                <p class="resultado">A temperatura irá aparecer aqui!</p>
+            </div>
+        </div>
+        <script src="js.js"></script>
+    </body>
+
+</html>

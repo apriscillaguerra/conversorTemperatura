@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap');
+
+body {
+    background-color: #FFE4B5;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+.dados {
+    border-top: 1px solid;
+    padding-top: 18px;
+    padding-left: 18px;
+}
+
+#temperatura {
+    width: 70px;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+select {
+    width: 122px;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#botao {
+    width: 100px;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #997c4a;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 18px;
+}
+
+.resultado {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
