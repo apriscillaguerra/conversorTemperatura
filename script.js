@@ -11,23 +11,39 @@ function converter() {
 
     var resFinal = document.querySelector('.resultado')
 
+    if (temp1 === temp2) {
+        alert('Selecione temperaturas diferentes para converter!')
+        return
+    }
+
     if ((temp1 === 'celsius') && (temp2 === 'fahrenheit')) {
         res = (tempAtual * 1.8) + 32
         resFinal.innerHTML = `A temperatura ${tempAtual}°C em graus Fahrenheit é ${res.toFixed(1)}°F.`
-    } else if ((temp1 === 'celsius') && (temp2 === 'kelvin')) {
+        return
+    }
+    if ((temp1 === 'celsius') && (temp2 === 'kelvin')) {
         res = (tempAtual + 273.15)
         resFinal.innerHTML = `A temperatura ${tempAtual}°C em graus Kelvin é ${res.toFixed(1)}°K.`
-    } else if ((temp1 === 'fahrenheit') && (temp2 === 'celsius')) {
+        return
+    }
+    if ((temp1 === 'fahrenheit') && (temp2 === 'celsius')) {
         res = (tempAtual - 32) / 1.8
         resFinal.innerHTML = `A temperatura ${tempAtual}°F em graus Celsius é ${res.toFixed(1)}°C.`
-    } else if ((temp1 === 'fahrenheit') && (temp2 === 'kelvin')) {
+        return
+    }
+    if ((temp1 === 'fahrenheit') && (temp2 === 'kelvin')) {
         res = (tempAtual + 459.67) * 0.556
         resFinal.innerHTML = `A temperatura ${tempAtual}°F em graus Kelvin é ${res.toFixed(1)}°K.`
-    } else if ((temp1 === 'kelvin') && (temp2 === 'celsius')) {
+        return
+    }
+    if ((temp1 === 'kelvin') && (temp2 === 'celsius')) {
         res = (tempAtual - 273.15)
         resFinal.innerHTML = `A temperatura ${tempAtual}°K em graus Celsius é ${res.toFixed(1)}°C`
-    } else if ((temp1 === 'kelvin') && (temp2 === 'fahrenheit')) {
+        return
+    }
+    if ((temp1 === 'kelvin') && (temp2 === 'fahrenheit')) {
         res = (tempAtual * 0.556) - 459.67
         resFinal.innerHTML = `A temperatura ${tempAtual}°K em graus Fahrenheit é ${res.toFixed(1)}°F.`
+        return
     }
 }
